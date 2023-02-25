@@ -1,0 +1,8 @@
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.csproj.AssemblyReference.cache
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.AssemblyInfoInputs.cache
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.AssemblyInfo.cs
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.csproj.CoreCompileInputs.cache
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.RazorAssemblyInfo.cache
+C:\Users\name\Source\Repos\MartinApostolov\Fable\obj\Debug\net6.0\Fable.RazorAssemblyInfo.cs
