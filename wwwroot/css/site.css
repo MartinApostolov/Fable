@@ -60,12 +60,77 @@ nav {
     text-shadow: -1.5px 0 #ffb338, 0 1.5px #ffb338, 1.5px 0 #ffb338, 0 -1.5px #ffb338;
 }
 
-.background {
+.background_Home {
     z-index: -1;
     text-align: center;
     padding-bottom: 15rem;
     background-color: #00000040;
     background-image: url('../ph.png');
+}
+
+.background_Game {
+    z-index: -1;
+    text-align: center;
+    padding-bottom: 15rem;
+    background-color: #00000040;
+    background-image: url('../ph.png');
+    max-height:48rem;
+}
+
+.npc_dialog_box {
+    z-index: 1;
+    width: 20rem;
+    position: relative;
+    top: -5rem;
+    left: 49rem;
+    word-wrap: anywhere;
+}
+
+.npc_image {
+    max-block-size: 15rem;
+}
+
+.npc_dialog_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pc_dialog_box {
+    z-index: 1;
+    width: 20rem;
+    position: relative;
+    top: 1rem;
+    left: 15rem;
+    word-wrap: anywhere;
+}
+
+.pc_image {
+    max-block-size: 15rem;
+}
+
+.pc_dialog_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pc {
+    width: 20rem;
+    height: 35rem;
+    position: relative;
+    top: -20rem;
+    left: -20rem;
+}
+
+.npc {
+    width: 10rem;
+    height: 25rem;
+    position: relative;
+    top: -15rem;
+    left: 0rem;
 }
 
 @keyframes swing {
