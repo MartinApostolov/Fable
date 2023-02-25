@@ -10,7 +10,7 @@
 
         <div class="pc_dialog_text" id="pc_dialog_text">ifjhasiogjadiokgjpkioasjgoaopgkjaofjapdghjuiasshdijuqashijughqaiujghqijufghiujaqhgijaqdfhgijadfh</div>
     </div>
-
+    
     <div class="npc_dialog_box" id="npc_dialog">
         <img class="npc_image" src="~/nicepng_rectangle-box-png_1917734.png" />
 
@@ -20,3 +20,35 @@
     <img class="pc" src="~/blue(place holder).png" />
     <img class="npc" src="~/red(place holder).png" />
 </div>
+
+
+<script>
+ 
+    const x = 0;
+    let sentance;
+    switch (x) {
+        case 0:
+        document.getElementById("npc_dialog_text").innerHTML = "Здравейте кралю нося данъците ми защото нямах мъзможност да ги донеса когато ги събирате";
+            document.getElementById("pc_dialog_text").innerHTML = "1 = positiv, 2 = negative";
+           
+            
+            document.addEventListener('keydown', function (event) {
+                if (event.keyCode == 97) {
+                    document.getElementById("pc_dialog_text").innerHTML = "Добре благодаря и гледайте следващия път да сте навреме";
+                    x++;
+                }
+                else if (event.keyCode == 98) {
+                    document.getElementById("pc_dialog_text").innerHTML = "Добре благодаря, но заради забавянето Ви ще се наложи като глоба да заплатите двойно или ще има добълнителни санкции.";
+                    
+                }
+            });
+            
+        break;
+       case 1:
+            document.getElementById("npc_dialog_text").innerHTML = "Здравейте кралю. От няколко дни имам проблеми с животните в кралството и граната може да ни свърши освен ако не направим нещо. Какво бихте предложил?";
+            document.getElementById("pc_dialog_text").innerHTML = "1 = positiv, 2 = negative, 3 = neutro";
+
+        
+    }
+    
+</script>
