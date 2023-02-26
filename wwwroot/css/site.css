@@ -18,6 +18,7 @@ body {
 }
 
 .button-log {
+    margin: 5px;
     float: right;
     background-color: #00000000;
     border: hidden;
@@ -28,11 +29,12 @@ body {
 }
 
 .menu {
-    max-width: 10rem;
+    max-width: 12rem;
+    padding:10px;
     margin: auto;
-    border: 5px dotted #ff6a00;
-    background-color: #808080;
+    background-color: #80808050;
     text-align: center;
+
 }
 
 .button-menu {
@@ -65,10 +67,12 @@ nav {
     text-align: center;
     padding-bottom: 15rem;
     background-color: #00000040;
-    background-image: url('../ph.png');
+    background-size: 80rem;
     height: 50rem;
-    width:79.9rem;
-    margin-left:-5rem;
+    width: 79.7rem;
+    margin-left: -5rem;
+    background-image: url('../castle background.png');
+    background-repeat: no-repeat;
 }
 
 .background_Game {
@@ -76,19 +80,22 @@ nav {
     text-align: center;
     padding-bottom: 15rem;
     background-color: #00000040;
-    background-image: url('../ph.png');
+    background-size:80rem;
     height: 50rem;
-    width: 79.9rem;
+    width: 79.7rem;
     margin-left: -5rem;
+    background-image: url("../king's room.png");
+    background-repeat: no-repeat;
 }
 
 .npc_dialog_box {
     z-index: 1;
     width: 20rem;
     position: relative;
-    top: -5rem;
+    top: -10rem;
     left: 49rem;
     word-wrap: anywhere;
+    transform: scaleX(-1);
 }
 
 .npc_image {
@@ -97,16 +104,17 @@ nav {
 
 .npc_dialog_text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:50px;
+    left:50px;
+    right:50px;
+    transform: scaleX(-1);
 }
 
 .pc_dialog_box {
     z-index: 1;
     width: 20rem;
     position: relative;
-    top: 1rem;
+    top: 10rem;
     left: 15rem;
     word-wrap: anywhere;
 }
@@ -117,9 +125,9 @@ nav {
 
 .pc_dialog_text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50px;
+    left: 50px;
+    right: 50px;
 }
 
 .pc {
@@ -135,7 +143,7 @@ nav {
     height: 25rem;
     position: relative;
     top: -15rem;
-    left: 0rem;
+    left: 30rem;
 }
 
 @keyframes swing {
@@ -180,7 +188,7 @@ nav {
 
 .popup {
     margin: 70px auto;
-    padding: 10rem;
+    padding: 2rem;
     background: #fff;
     border-radius: 5px;
     width: 30%;
@@ -222,4 +230,35 @@ nav {
     .popup {
         width: 70%;
     }
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+    .close:hover {
+        color: #06D85F;
+    }
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover {
+        font-size:15px;
+        color: #000;
+        text-decoration: none;
+    }
+
+.button1:hover {
+    font-size: 30px;
+    color: #06D85F;
 }
