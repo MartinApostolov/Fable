@@ -117,13 +117,115 @@ nav {
     max-block-size: 15rem;
 }
 
+.sistem {
+    background: #fff;
+    position: relative;
+    top: -70rem;
+    word-wrap: anywhere;
+}
+
+.stats {
+    z-index: 2;
+    position: relative;
+    top: -112rem;
+    right: 30rem;
+}
+
+.coin {
+    position: relative;
+    top: -2px;
+    max-block-size: 1rem;
+}
+
+.sistem_m1 {
+    z-index: 1;
+    position: relative;
+    word-wrap: anywhere;
+}
+
+    .sistem_m1 span {
+        opacity: 0;
+    }
+
+        .sistem_m1 span.revealed {
+            opacity: 1;
+        }
+
+        .sistem_m1 span.green {
+            color: #27ae60;
+        }
+
+        .sistem_m1 span.red {
+            color: #ff0000;
+        }
+
+.sistem_m2 {
+    z-index: 1;
+    position: relative;
+    word-wrap: anywhere;
+}
+
+    .sistem_m2 span {
+        opacity: 0;
+    }
+
+        .sistem_m2 span.revealed {
+            opacity: 1;
+        }
+
+        .sistem_m2 span.green {
+            color: #27ae60;
+        }
+
+        .sistem_m2 span.red {
+            color: #ff0000;
+        }
+
+.sistem_m3 {
+    z-index: 1;
+    position: relative;
+    word-wrap: anywhere;
+}
+
+    .sistem_m3 span {
+        opacity: 0;
+    }
+
+        .sistem_m3 span.revealed {
+            opacity: 1;
+        }
+
+        .sistem_m3 span.green {
+            color: #27ae60;
+        }
+
+        .sistem_m3 span.red {
+            color: #ff0000;
+        }
+
 .npc_dialog_text {
     position: absolute;
-    top:50px;
-    left:50px;
-    right:50px;
+    top: 50px;
+    left: 50px;
+    right: 50px;
     transform: scaleX(-1);
 }
+
+    .npc_dialog_text span {
+        opacity: 0;
+    }
+
+        .npc_dialog_text span.revealed {
+            opacity: 1;
+        }
+
+        .npc_dialog_text span.green {
+            color: #27ae60;
+        }
+
+        .npc_dialog_text span.red {
+            color: #ff0000;
+        }
 
 .pc_dialog_box {
     z-index: 1;
@@ -144,6 +246,22 @@ nav {
     left: 50px;
     right: 50px;
 }
+
+    .pc_dialog_text span {
+        opacity: 0;
+    }
+
+        .pc_dialog_text span.revealed {
+            opacity: 1;
+        }
+
+        .pc_dialog_text span.green {
+            color: #27ae60;
+        }
+
+        .pc_dialog_text span.red {
+            color: #ff0000;
+        }
 
 .pc {
     width: 25rem;
@@ -176,6 +294,16 @@ nav {
 
     80% {
         transform: scale(.95);
+    }
+}
+
+@keyframes big {
+    0% {
+        transform: scale(.0);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 

@@ -1,7 +1,16 @@
+using Fable.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<SQLDbContext>(options =>
+{
+    options.UseMySQL("Server=localhost;Database=Fable;Uid=root;Pwd=Root;");
+});
+
 
 var app = builder.Build();
 
