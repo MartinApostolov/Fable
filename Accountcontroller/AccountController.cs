@@ -1,14 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Fable.Models;
+using Microsoft.Extensions.Configuration;
+using MySql.EntityFrameworkCore.Extensions;
+using System.Configuration;
 
 public class AccountController : Controller
 {
     private readonly SQLDbContext _context;
+    private readonly IConfiguration _configuration;
 
-    public AccountController(SQLDbContext context)
+    public AccountController(SQLDbContext context, IConfiguration configuration)
     {
         _context = context;
+        _configuration = configuration;
     }
 
     public IActionResult Index1()

@@ -1,0 +1,19 @@
+﻿@page
+@model RegistrationModel
+
+<h2>Register</h2>
+<a class="close" href="/Index1">&times;</a>
+
+<form method="post">
+    <div>
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" name="Username" required>
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password" required>
+    </div>
+    <div>
+        <button type="submit" href="/Login">Register</button>
+    </div>
+</form>
