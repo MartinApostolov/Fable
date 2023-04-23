@@ -8,9 +8,11 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<SQLDbContext>(options =>
 {
-    options.UseMySQL("Server=localhost;Database=Fable;Uid=root;Pwd=Root;");
+    options.UseMySQL("Server=localhost;Database=info;Uid=root;Pwd=test;");
 });
-
+builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSession();
 
 var app = builder.Build();
 

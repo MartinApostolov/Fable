@@ -6,9 +6,9 @@
 <div class="background_Home">
     <nav>
 
-        <a class="button-log" href="#popup4">Log in</a>
+        <a class="button-log" href="/Login">Log in</a>
 
-        <a class="button-log" href="#popup5">Sign up</a>
+        <a class="button-log" href="/Registration">Sign up</a>
 
     </nav>
     <div class="background_Home_Image">
@@ -69,45 +69,52 @@
         </div>
     </div>
 
-    <div id="popup4" class="overlay">
-        <div class="popup">
-            <h2>Log In</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-                Name: <input type="text" name="name"><br>
-            </div>
-            <div class="content">
-                E-mail: <input type="text" name="email"><br>
-            </div>
-            <div class="content">
-                Password: <input type="text" name="password"><br>
-            </div>
-            <div class ="content">
-                <a class="button-pop" href="#">Log In</a>
+        <div id="popup4" class="overlay">
+            <div class="popup">
+                <h2>Log In</h2>
+                <a class="close" href="#">&times;</a>
+                <div id="popup4" class="overlay">
+                    <div class="popup">
+                        <h2>Log In</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Name: <input type="text" name="name"><br>
+                        </div>
+                        <div class="content">
+                            E-mail: <input type="text" name="email"><br>
+                        </div>
+                        <div class="content">
+                            Password: <input type="text" name="password"><br>
+                        </div>
+                        <div class="content">
+                            <a class="button-pop" href="#">Log In</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="popup5" class="overlay">
-        <div class="popup">
-            <h2>Sign Up</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-                Name: <input type="text" name="name"><br>
-            </div>
-            <div class="content">
-                E-mail: <input type="text" name="email"><br>
-            </div>
-            <div class="content">
-                Password: <input type="text" name="password"><br>
-            </div>
-            <div class="content">
-                <a class="button" href="#popup4">Already have an account?</a>
-            </div>
-            <div class="content">
-                <a class="button-pop" href="#">Sign Up</a>
+        <div id="popup5" class="overlay">
+            <div class="popup">
+                <h2>Sign Up</h2>
+                <a class="close" href="#">&times;</a>
+                <form method="post">
+                    <div>
+                        <label for="Username">Username:</label>
+                        <input type="text" id="Username" name="Username" required><br><br>
+                    </div>
+                    <div>
+                        <label for="Password">Password:</label>
+                        <input type="password" id="Password" name="Password" required><br><br>
+                    </div>
+                    <div class="content">
+                        <a class="button" href="#popup4">Already have an account?</a>
+                    </div>
+                    <div>
+                        <button type="submit" href="popup4">Register</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
     </div>
 </div>
