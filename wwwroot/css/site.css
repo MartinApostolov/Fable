@@ -125,16 +125,21 @@ nav {
 }
 
 .stats {
-    z-index: 2;
     position: relative;
-    top: -112rem;
-    right: 30rem;
+    z-index: 2;
+    top: -93rem;
+    right: 37rem;
 }
 
 .coin {
+    z-index: 2;
     position: relative;
-    top: -2px;
-    max-block-size: 1rem;
+    max-block-size: 3rem;
+}
+
+.coin_s {
+    z-index: 2;
+    position: relative;
 }
 
 .sistem_m1 {
